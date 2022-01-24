@@ -17,6 +17,8 @@ Documentation: https://github.com/nschloe/blacktex
 for LaTeX. It removes all comments from a given file and corrects
 some common anti-patterns.
 
+PyPI: [https://pypi.org/project/blacktex/](https://pypi.org/project/blacktex/)
+
 
 Current build status
 ====================

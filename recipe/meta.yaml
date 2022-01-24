@@ -1,5 +1,5 @@
 {% set name = "blacktex" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blacktex-{{ version }}.tar.gz
-  sha256: 1a0660ea8438ae7c640977a19b5b2c326a3555d0af2e32eb06e67758a4f0d40a
+  sha256: fd6d25906cb024801730c22145b14ea93d192a077bf56be4e6b1514d44a55b9f
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - flit-core >=3.2,<4
   run:
     - python >=3.6
     - importlib-metadata
@@ -41,7 +42,10 @@ about:
   description: |
     `blacktex` is a little tool, helping with the article editing 
     for LaTeX. It removes all comments from a given file and corrects 
-    some common anti-patterns.   
+    some common anti-patterns.
+
+    PyPI: [https://pypi.org/project/blacktex/](https://pypi.org/project/blacktex/)
+
   doc_url: https://github.com/nschloe/blacktex
   dev_url: https://github.com/nschloe/blacktex
 
