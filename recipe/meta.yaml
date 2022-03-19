@@ -1,5 +1,5 @@
 {% set name = "blacktex" %}
-{% set version = "0.5.3" %}
+{% set version = "0.8.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blacktex-{{ version }}.tar.gz
-  sha256: fd6d25906cb024801730c22145b14ea93d192a077bf56be4e6b1514d44a55b9f
+  sha256: 387ce5e65162adc5f30b5b8055f7f89eabacce4018ccaf75417ff279dd22eca5
 
 build:
   number: 0
