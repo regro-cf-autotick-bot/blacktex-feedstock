@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blacktex-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/blacktex-{{ version }}.tar.gz
   sha256: fd6d25906cb024801730c22145b14ea93d192a077bf56be4e6b1514d44a55b9f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - blacktex = blacktex.cli:main
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - flit-core >=3.2,<4
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - importlib-metadata
 
 test:
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nschloe/blacktex
